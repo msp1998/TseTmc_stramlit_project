@@ -93,7 +93,7 @@ def debth_market(link):
    
     main_text = link
     
-    market_info = pd.read_excel(r'C:\Users\mSp\Desktop\py\work\stocks_id_info.xlsx')
+    market_info = pd.read_excel(r'stocks_id_info.xlsx')
     OB_df = pd.DataFrame((main_text.split('@')[3]).split(';'))
     
     OB_df = OB_df[0].str.split(",",expand=True)
@@ -226,7 +226,7 @@ def get_time():
 st. set_page_config(layout="wide")
 
 
-market_info = pd.read_excel(r'C:\Users\mSp\Desktop\py\work\stocks_id_info.xlsx')
+market_info = pd.read_excel(r'stocks_id_info.xlsx')
 market_sector_pd_for_map = sector_name()
 
 st.sidebar.title('بورس یا اختیار یا آتی')
